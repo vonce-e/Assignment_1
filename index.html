@@ -1,23 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="keystheticlogo.png" type="image/x-icon">
-    <title> Keysthetic </title> 
+
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="images/keystheticlogo.png" type="image/x-icon">
+    <title> Keysthetic </title> 
+
 </head>
 <body>
+
     <!-- Navigation Bar -->
     <nav>
-        <div class="homenav">
-            <img src = "keystheticlogo.png" width = "50px" height = "50px">
-            <h2>Keysthetic</h2>
+        <!-- Logo -->
+        <div class="flex">
+            <div class="logo">
+                <img src="images/keystheticlogo.png">
+                <a href="index.html"><p>Keysthetic</p></a>
+            </div>
+
+            <!-- Left Side of Navigation Bar -->
+            <div class="nav_bar">
+                <a href="keyboards.html">Keyboards</a><span class="material-icons">keyboard_arrow_down</span>
+                <a href="components.html">Components</a><span class="material-icons">keyboard_arrow_down</span>
+                <a href="cables.html">Cables</a>
+                <a href="services.html">Services</a><span class="material-icons">keyboard_arrow_down</span>
+            </div>
+
+            <div class="rightside_navbar">
+                
+                <!-- Log in Icon -->
+                <a href="login.html"><span class="material-icons" style="font-size: 30px;">person</span></a>
+                
+                <!-- Search Icon -->
+                <div class="search_icon">
+                    <a href="search.html"><span class="material-icons" style="font-size: 30px;">search</span></a>
+                </div>
+
+                <div class="cart_icon">
+                    <a href="cart.html"><span class="material-icons" style="font-size: 26.5px;">shopping_cart</span></a>
+                </div>
+            </div>
         </div>
-        <ul>
-            <li><a href="#keyboards">Keyboards</a></li>
-            <li><a href="#components">Components</a></li>
-            <li><a href="#cables">Cables</a></li>
-            <li><a href="#services">Services</a></li>
-        </ul>
     </nav>
+    <br>
+    <hr>
+
+    <!-- Page Contents -->
+    <section>
+        <main>
+            <!-- Introductory Section -->
+            <div class="introduction">
+
+                <!-- Background Color -->
+                <div class="background_color"></div>
+
+                <img src="images/keyboard_image.png">
+
+                <!-- Header Text -->
+                <h1>Where Dreams<br>Meet<span> Possibilities </span></h1>
+
+                <!-- Description Text -->
+                <p>Assembled in California</p>
+
+                <!-- "Start Building" Button -->
+                <a href="custombuilding.html"><button class="start_building">Start Building</button></a>
+
+                <!-- "New Keyboards" Button -->
+                <a href="keyboards.html"><button class="gradient_button">Check out our New Keyboards</button></a>
+
+            </div>
+            
+            <!-- Categories Section -->
+            <!-- Header text -->
+            <div class="header_text">
+                <h1>Categories</h1>
+            </div>
+
+            <div class="image_sorting">
+
+                <div class="image_sorting_elements">
+                    <a href="keyboards.html"><img src="images/categories_keyboard.jpg"></a>
+                    <p>Keyboards</p>
+                </div>
+
+                <div class="image_sorting_elements">
+                    <a href="switches.html"><img src="images/categories_switches.jpg"></a>
+                    <p>Switches</p>
+                </div>
+
+                <div class="image_sorting_elements">
+                    <a href="keycaps.html"><img src="images/categories_keycaps.jpg"></a>
+                    <p>Keycaps</p>
+                </div>
+            </div>
+
+            <!-- Monthly Favourites Section -->
+
+            <!-- Header text -->
+            <div class="header_text">
+                <h1>Monthly Favourites</h1>
+            </div>
+
+            <div class="image_sorting">
+
+                <div class="image_sorting_elements">
+                    <a href="keyboards.html"><img src="images/monthlyfav_keyboard.png"></a>
+                    <p>GMK 87 Keyboard</p>
+                </div>
+
+                <div class="image_sorting_elements">
+                    <a href="switches.html"><img src="images/monthlyfav_switches.png"></a>
+                    <p>Akko Creamy Purple V3 Pro</p>
+                </div>
+
+                <div class="image_sorting_elements">
+                    <a href="keycaps.html"><img src="images/monthlyfav_keycaps.png"></a>
+                    <p>ABS Rome Keycap Set</p>
+                </div>
+            </div>
+
+            <!-- Keysthetic Experience Section -->
+            <div class="keysthetic_experience">
+
+                <!-- Header text -->
+                <h1>The Keysthetic Experience</h1>
+
+                <div class="image_sorting_exp">
+
+                    <div class="image_sorting_elements_exp">
+                        <img src="images/experience_optimization.png">
+                        <h3> Countless Optimization<br>Options</h3>
+                        <p>Over 10K Keyboard Combinations</p>
+                    </div>
+    
+                    <div class="image_sorting_elements_exp">
+                        <img src="images/experience_beginnerfriendly.png">
+                        <h3>Beginner Friendly</h3>
+                        <p>Perfect entry into the hobby</p>
+                    </div>
+    
+                    <div class="image_sorting_elements_exp">
+                        <img src="images/experience_affordable.png">
+                        <h3>Affordable & Accessible</h3>
+                        <p>Quality you trust<br>Prices you love</p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Socials Footer -->
+    <footer>
+        <div class="socials">
+            <h1>Socials</h1>
+
+            <div class="logos">
+                <!-- Instagram Logo -->
+                <i class="fa fa-instagram"></i>
+
+                <!-- Twitter Logo -->
+                <i class="fa fa-twitter"></i>
+
+                <!-- Youtube Logo -->
+                <i class="fa fa-youtube-play"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

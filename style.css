@@ -1,27 +1,282 @@
-body{
-    
+html, body {
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-.homenav {
-    position: relative;
-    left: 200px;
-    bottom: 60px;
+/* Navigation Bar */
+.flex {
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
 }
 
-h2 {
-    font-family: sans-serif;
-    font-size: 25px;
-    position: relative;
-    left: 100px;
-    bottom: 60px;
+.logo {
+    display: flex;
 }
 
-ul li {
-    list-style: none;
+/* Logo Elements */
+.logo img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding-top: 16%;
+}
+
+.logo p {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 7%;
+    padding-top: 1%;
     display: inline-block;
-    padding-right: 50px;
+    align-items: center;
+    color: black
+
 }
 
-ul li a {
+/* Left side navigation bar elements */
+.nav_bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar a {
+    position: relative;
+    font-size: 18.75px;
+    font-weight: medium;
+    opacity: 90%;
     text-decoration: none;
+    color: black;
+    padding-top: 1.3%;
+    margin-left: 17.5%;
+    transition: all 0.3s ease 0%;
+}
+
+/* Hover Animation */
+.nav_bar a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    height: 3px;
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 25px;
+    transform: scaleX(0);
+    background: #3cd49c;
+
+}
+
+.nav_bar a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Icons for navigation bar*/
+.material-icons {
+    padding-top: 1.85%;
+    padding-left: 0.5%;
+    opacity: 80%;
+}
+
+/* Right side navigation bar elements*/
+.rightside_navbar {
+    margin-left: auto;
+    padding-right: 12.5%;
+    padding-top: 0.5%;
+    display: flex;
+}
+
+.rightside_navbar a {
+    color: black;
+    cursor: pointer;
+}
+
+/* Icon positioning */
+.search_icon {
+    padding-top: 1%;
+    padding-left: 30%;
+}
+
+.cart_icon {
+    padding-top: 4%;
+    padding-left: 30%;
+}
+
+/* Navigation bar line separator */
+hr {
+    width: 100%;
+    padding: 0;
+    margin-top: -15px;
+    margin-bottom: 0;
+    opacity: 70%;
+}
+
+/* Dropdown Menu for Keyboards */
+
+
+
+/* Background of Hero Image*/
+.introduction {
+    height: 600px;
+    width: 100%;
+    background: #e8fcfc;
+}
+
+/* Keyboard Image */
+.introduction img{
+    width: 43%;
+    position: relative;
+    top: 5%;
+    left: 50%;
+}
+
+/* Header text */
+.introduction h1 {
+    font-size: 3.5em;
+    font-weight: 650;
+    position: relative;
+    left: 12.5%;
+    bottom: 70%;
+}
+
+/* Description text */
+.introduction p{
+    position: relative;
+    left: 12.7%;
+    bottom: 74%;
+    opacity: 65%;
+}
+
+/* Styling text within the image */
+.introduction span {
+    color: #3cd49c;
+}
+
+/* "Start Building" Button */
+.introduction .start_building {
+    font-size: 17px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 7.5px;
+    position: relative;
+    left: 12.5%;
+    bottom: 67.5%;
+    box-shadow: 5px 5px #3cd49c;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* Hover animation for Start Building Button */
+.introduction .start_building:hover {
+    transform: scale(1.06);
+}
+
+/* New Keyboards Button */
+.gradient_button {
+    font-size: 15px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #f47474, #64a4f7);
+    color: white;
+    border: none;
+    padding: 7.5px 10px;
+    border-radius: 12.5px;
+    position: relative;
+    left: 4.5%;
+    bottom: 112.5%;
+    cursor: pointer;
+}
+
+/* Images under Categories Section */
+.header_text h1 {
+    text-align: center;
+    padding-top: 1%;
+}
+
+.image_sorting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_sorting_elements {
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.image_sorting_elements img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+/* Hover Animation for Images */
+.image_sorting_elements img:hover {
+    transform: scale(1.0425);
+}
+
+.image_sorting_elements p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Keysthetic Experience */
+.keysthetic_experience {
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 2%;
+}
+
+.keysthetic_experience h1 {
+    font-weight: 600;
+}
+
+.keysthetic_experience h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Image Sorting for Keysthetic Experience */
+.image_sorting_exp {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image_sorting_elements_exp {
+    text-align: center;
+    width: 12.5%;
+}
+
+.image_sorting_elements_exp img {
+    width: 100%;
+    height: auto;
+}
+
+.image_sorting_elements_exp p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 10%;
+}
+
+/* Footer */
+.socials h1 {
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.socials .logos{
+    font-size: 350%;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+    justify-content: space-evenly;
 }
