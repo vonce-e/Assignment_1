@@ -4,6 +4,9 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
+    flex-wrap: wrap;
 }
 
 /* Navigation Bar */
@@ -52,6 +55,7 @@ html, body {
     padding-top: 1.3%;
     margin-left: 17.5%;
     transition: all 0.3s ease 0%;
+    cursor: pointer;
 }
 
 /* Hover Animation */
@@ -94,11 +98,6 @@ html, body {
 }
 
 /* Icon positioning */
-.search_icon {
-    padding-top: 1%;
-    padding-left: 30%;
-}
-
 .cart_icon {
     padding-top: 4%;
     padding-left: 30%;
@@ -112,10 +111,6 @@ hr {
     margin-bottom: 0;
     opacity: 70%;
 }
-
-/* Dropdown Menu for Keyboards */
-
-
 
 /* Background of Hero Image*/
 .introduction {
@@ -131,6 +126,20 @@ hr {
     top: 5%;
     left: 50%;
 }
+/* New Keyboards Button */
+.gradient_button {
+    font-size: 15px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #f47474, #64a4f7);
+    color: white;
+    border: none;
+    padding: 7.5px 10px;
+    border-radius: 12.5px;
+    position: relative;
+    left: 3.5%;
+    bottom: 102.5%;
+    cursor: pointer;
+}
 
 /* Header text */
 .introduction h1 {
@@ -138,14 +147,14 @@ hr {
     font-weight: 650;
     position: relative;
     left: 12.5%;
-    bottom: 70%;
+    bottom: 60%;
 }
 
 /* Description text */
 .introduction p{
     position: relative;
     left: 12.7%;
-    bottom: 74%;
+    bottom: 64%;
     opacity: 65%;
 }
 
@@ -165,7 +174,7 @@ hr {
     border-radius: 7.5px;
     position: relative;
     left: 12.5%;
-    bottom: 67.5%;
+    bottom: 57.5%;
     box-shadow: 5px 5px #3cd49c;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -176,28 +185,13 @@ hr {
     transform: scale(1.06);
 }
 
-/* New Keyboards Button */
-.gradient_button {
-    font-size: 15px;
-    font-weight: 500;
-    background-image: linear-gradient(to right, #f47474, #64a4f7);
-    color: white;
-    border: none;
-    padding: 7.5px 10px;
-    border-radius: 12.5px;
-    position: relative;
-    left: 4.5%;
-    bottom: 112.5%;
-    cursor: pointer;
-}
-
 /* Images under Categories Section */
 .header_text h1 {
     text-align: center;
     padding-top: 1%;
 }
 
-.image_sorting {
+#image_sorting {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,3 +274,33 @@ hr {
     bottom: 80px;
     justify-content: space-evenly;
 }
+
+/* Hero Image Section for Components(switches, cables, etc.) pages */
+.hero_image {
+    position: relative;
+    padding-top: 0.1%;
+    background-color: #f3f3f3;
+    height: 390px;
+}
+
+.hero_image img {
+    width: 50%;
+    float: right;
+}
+
+.hero_image h1 {
+    font-size: 55px;
+    font-weight: 550;
+    position: relative;
+    left: 5%;
+    top: 7.5%
+}
+
+.hero_image p {
+    font-size: 17.5px;
+    position: relative;
+    left: 5%;
+    top: 2.5%;
+}
+
+/* Filter Box Section */
