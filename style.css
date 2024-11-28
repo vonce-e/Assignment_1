@@ -6,7 +6,6 @@ html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding: 6rem;
-    flex-wrap: wrap;
 }
 
 /* Navigation Bar */
@@ -29,9 +28,9 @@ html, body {
 }
 
 .logo p {
-    font-weight: bold;
-    font-size: 30px;
-    padding-left: 7%;
+    font-weight: 650;
+    font-size: 27.5px;
+    padding-left: 10%;
     padding-top: 1%;
     display: inline-block;
     align-items: center;
@@ -47,13 +46,13 @@ html, body {
 
 .nav_bar a {
     position: relative;
-    font-size: 18.75px;
-    font-weight: medium;
+    font-size: 16.75px;
+    font-weight: 400;
     opacity: 90%;
     text-decoration: none;
     color: black;
     padding-top: 1.3%;
-    margin-left: 17.5%;
+    margin-left: 23.5%;
     transition: all 0.3s ease 0%;
     cursor: pointer;
 }
@@ -114,7 +113,7 @@ hr {
 
 /* Background of Hero Image*/
 .introduction {
-    height: 600px;
+    height: 36.75em;
     width: 100%;
     background: #e8fcfc;
 }
@@ -136,7 +135,7 @@ hr {
     padding: 7.5px 10px;
     border-radius: 12.5px;
     position: relative;
-    left: 3.5%;
+    left: 4%;
     bottom: 102.5%;
     cursor: pointer;
 }
@@ -242,6 +241,7 @@ hr {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .image_sorting_elements_exp {
@@ -261,34 +261,108 @@ hr {
 }
 
 /* Footer */
-.socials h1 {
-    font-weight: 500;
-    text-align: center;
-    padding-bottom: 5%;
+
+/* Background color */
+.footer_section {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    margin-top: 1em;
+    height: 25em;
 }
 
-.socials .logos{
-    font-size: 350%;
-    text-align: center;
+.footer_section img {
+    height: 2.5em;
+    width: 2.5em;
     position: relative;
-    bottom: 80px;
-    justify-content: space-evenly;
+    top: 5em;
+    left: 19.75em;
+}
+
+.footer_section a h1 {
+    font-weight: 500;
+    font-size: 1.6em;
+    color: rgb(245, 245, 245);
+    position: relative;
+    left: 12.75em;
+    padding-top: 2.5em;
+}
+
+.footer_section a {
+    text-decoration: none;
+}
+
+.footer_content h2 {
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+    font-size: 1.4em;
+    position: relative;
+    left: 35.425em;
+    padding-top: 2.5em;
+    padding-right: 15em;
+}
+
+.footer_content ul li {
+    list-style: none;
+}
+
+.footer_content ul li a {
+    font-weight: 500;
+    opacity: 70%;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    line-height: 1.5em;
+    position: relative;
+    left: 47.1em;
+    bottom: 0.5em;
+    cursor: pointer;
+}
+
+/* Hover animation */
+.footer_content ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -0.5px;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    border-radius: 25px;
+    transform: scaleX(0);
+    background: lightgrey;
+}
+
+.footer_content ul li a:hover::before {
+transform: scaleX(1);
+}
+
+/* Copyright logo */
+.copyright_elements span {
+    opacity: 70%;
+    color: rgb(245, 245, 245);
+    position: relative;
+    left: 27.25em;
+    top: 14em;
+}
+
+.copyright_elements p {
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+    opacity: 70%;
+    position: relative;
+    left: 42.65em;
+    top: 18.4em;
 }
 
 /* Hero Image Section for Components(switches, cables, etc.) pages */
-.hero_image {
+.main_section {
     position: relative;
     padding-top: 0.1%;
-    background-color: #f3f3f3;
-    height: 390px;
+    background-color: #f0fcfc;
+    height: auto;
+    padding-bottom: 7.5%;
 }
 
-.hero_image img {
-    width: 50%;
-    float: right;
-}
-
-.hero_image h1 {
+.main_section h1 {
     font-size: 55px;
     font-weight: 550;
     position: relative;
@@ -296,7 +370,7 @@ hr {
     top: 7.5%
 }
 
-.hero_image p {
+.main_section p {
     font-size: 17.5px;
     position: relative;
     left: 5%;
@@ -304,3 +378,86 @@ hr {
 }
 
 /* Filter Box Section */
+.filter_dropdown p {
+    font-size: 17px;
+    opacity: 70%;
+    position: relative;
+    left: 5.25%;
+    margin-top: 1.5%;
+}
+
+/* Filter Dropdown button Elements */
+.filter_dropdown button {
+    padding: 5px 5px;
+    background-color: #f8f8f8;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 5%;
+    position: relative;
+    left: 5.25%;
+}
+
+/* Products Section */
+/* Header text */
+.product_info_text h3 {
+    font-size: 17.5px;
+    font-weight: 500;
+    position: relative;
+    left: 5.25%;
+    margin-top: 4%;
+}
+
+.products {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product_images {
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 5em;
+}
+
+.product_images img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+/* Image Description Text */
+.product_images h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    left: 10%;
+    top: 0.5em;
+}
+
+.product_images p {
+    font-size: 16px;
+    opacity: 70%;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    left: 10%;
+}
+
+/* Price Tag text */
+.product_images span {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Product Image Hover Animation */
+.product_images img:hover {
+    transform: scale(1.0425);
+}
+

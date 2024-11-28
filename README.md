@@ -1,2 +1,13 @@
-# Assignment_1
-This is the repository for my Assignment 1
+# S10267888, Vonce Chew Assignment_1
+
+
+
+
+
+
+
+
+
+
+Credits :
+Company logo, component(keyboard, cables, switches, etc.) images, from : https://landingpad.shop/
