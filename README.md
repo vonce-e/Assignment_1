@@ -11,3 +11,4 @@
 
 Credits :
 Company logo, component(keyboard, cables, switches, etc.) images, from : https://landingpad.shop/
+Switches, Keyboard and Keycaps image hero image from : https://mash.sg/

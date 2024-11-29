@@ -1,6 +1,5 @@
 html, body {
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -135,7 +134,7 @@ hr {
     padding: 7.5px 10px;
     border-radius: 12.5px;
     position: relative;
-    left: 4%;
+    left: 6%;
     bottom: 102.5%;
     cursor: pointer;
 }
@@ -344,7 +343,7 @@ transform: scaleX(1);
     opacity: 70%;
     color: rgb(245, 245, 245);
     position: relative;
-    left: 11.9em;
+    left: 9.4em;
     top: 14em;
 }
 
@@ -353,32 +352,13 @@ transform: scaleX(1);
     font-weight: 500;
     opacity: 70%;
     position: relative;
-    left: 19.65em;
-    top: 18.4em;
+    left: 15.9em;
+    top: 18.39em;
 }
 
 /* Hero Image Section for Components(switches, cables, etc.) pages */
-.main_section {
-    position: relative;
-    padding-top: 0.1%;
-    background-color: #f0fcfc;
-    height: auto;
-    padding-bottom: 7.5%;
-}
-
-.main_section h1 {
-    font-size: 55px;
-    font-weight: 550;
-    position: relative;
-    left: 5%;
-    top: 7.5%
-}
-
-.main_section p {
-    font-size: 17.5px;
-    position: relative;
-    left: 5%;
-    top: 2.5%;
+.main_section img {
+    width: 100%;
 }
 
 /* Filter Box Section */
@@ -393,7 +373,7 @@ transform: scaleX(1);
 /* Filter Dropdown button Elements */
 .filter_dropdown button {
     padding: 5px 5px;
-    background-color: #f8f8f8;
+    background-color: white;
     border: 1px solid black;
     border-radius: 5px;
     width: 5%;
@@ -409,6 +389,10 @@ transform: scaleX(1);
     position: relative;
     left: 5.25%;
     margin-top: 4%;
+}
+
+.switches_heroimage img {
+    width: 100%;
 }
 
 .products {
@@ -465,3 +449,13 @@ transform: scaleX(1);
     transform: scale(1.0425);
 }
 
+/* View Collection Link for Switches Section */
+.switches_link a {
+    font-size: 15px;
+    color: black;
+    display: block;
+    text-align: center;
+    padding-bottom: 3%;
+    letter-spacing: 1px;
+    transform: scale(1,0.9)
+}
