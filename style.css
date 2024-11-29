@@ -276,7 +276,7 @@ hr {
     width: 2.5em;
     position: relative;
     top: 5em;
-    left: 19.75em;
+    left: 16.75em;
 }
 
 .footer_section a h1 {
@@ -284,7 +284,7 @@ hr {
     font-size: 1.6em;
     color: rgb(245, 245, 245);
     position: relative;
-    left: 12.75em;
+    left: 10.9em;
     padding-top: 2.5em;
 }
 
@@ -292,12 +292,16 @@ hr {
     text-decoration: none;
 }
 
+.footer_section i {
+    padding-right: 1.5%;
+}
+
 .footer_content h2 {
     color: rgb(245, 245, 245);
     font-weight: 500;
     font-size: 1.4em;
     position: relative;
-    left: 35.425em;
+    left: 30.425em;
     padding-top: 2.5em;
     padding-right: 15em;
 }
@@ -313,7 +317,7 @@ hr {
     text-decoration: none;
     line-height: 1.5em;
     position: relative;
-    left: 47.1em;
+    left: 40.2em;
     bottom: 0.5em;
     cursor: pointer;
 }
@@ -340,7 +344,7 @@ transform: scaleX(1);
     opacity: 70%;
     color: rgb(245, 245, 245);
     position: relative;
-    left: 27.25em;
+    left: 11.9em;
     top: 14em;
 }
 
@@ -349,7 +353,7 @@ transform: scaleX(1);
     font-weight: 500;
     opacity: 70%;
     position: relative;
-    left: 42.65em;
+    left: 19.65em;
     top: 18.4em;
 }
 
