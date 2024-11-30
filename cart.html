@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Script to check if cart is Empty -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+            const cartContainer = document.getElementById('cart-info');
+
+            if (cart.length === 0) {
+                cartContainer.textContent = 'Your cart is empty.';
+            } else {
+                cart.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.innerHTML = `
+                        <p>${item.name} - $${(item.price * item.quantity).toFixed(2)} (${item.quantity} pcs)</p>
+                    `;
+                    cartContainer.appendChild(itemElement);
+                });
+            }
+        });
+    </script>
 
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -47,5 +68,51 @@
     </nav>
     <br>
     <hr>
+    
+    <!-- Cart Section -->
+    <main>
+        <div class="cart-info">
+            <h1>Your Cart</h1>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer_section">
+            
+            <img src="images/landingpad_logo_white.png">
+            <a href="index.html"><h1>Keysthetic</h1></a>
+
+            <div class="footer_content">
+                <h2>Products</h2>
+                <ul>
+                    <li><a href="keyboards.html">Keyboards</a></li>
+                    <li><a href="keycaps.html">Keycaps</a></li>
+                    <li><a href="switches.html">Switches</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h2>Community</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/landingpadsg/"><i class="fa fa-instagram"></i>Instagram</a></li>
+                    <li><a href="https://x.com/landingpadsg"><i class="fa fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://discord.com/"><i class="fa fa-discord" aria-hidden="true"></i>Discord</a></li>
+                    <li><a href="https://telegram.org/"><i class="fa fa-telegram"></i>Telegram</a></li>
+                </ul>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="copyright_elements">
+                <span class="material-icons">copyright</span>
+                <p>2024, Keysthetic</p>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
 </html>

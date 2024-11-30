@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 
@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
 
-
     <link rel="shortcut icon" href="images/landingpad_logo.png" type="image/x-icon">
     <title> Keysthetic </title> 
-    
+
 </head>
 <body>
 
@@ -31,7 +30,7 @@
             <!-- Left Side of Navigation Bar -->
             <div class="nav_bar">
                 <a href="keyboards.html">Keyboards</a>
-                <a href="#image_sorting">Components</a>
+                <a href="index.html#image_sorting">Components</a>
                 <a href="accessories.html">Accessories</a>
             </div>
 
@@ -51,108 +50,72 @@
     <br>
     <hr>
 
-    <!-- Page Contents -->
+    <!-- Product Information -->
     <main>
-        <!-- Introductory Section -->
-        <div class="introduction">
+        <div class="product_info">
 
-            <!-- Background Color -->
-            <div class="background_color"></div>
+            <!-- Image of Product -->
+            <img src="images/straightcables.png">
 
-            <img src="images/keyboard_image.png">
+            <!-- Product Description -->
 
-            <!-- Header Text -->
-            <h1>Where Dreams<br>Meet<span> Possibilities </span></h1>
+            <!-- Header -->
+            <h1>Assorted Straight Aviator Cables</h1>
 
-            <!-- Description Text -->
-            <p>Assembled in California</p>
+            <div class="product_description">
 
-            <!-- "Start Building" Button -->
-            <a href="keyboards.html"><button class="start_building">Buy Now</button></a>
+                <!-- Switch Description -->
+                <ul>
+                    <li><span>Connections</span>: Type C (Keyboard) to USB(Computer)</li>
+                    <li><span>Length</span>: 1.8m</li>
+                    <li><span>Material</span>: Paracord with clear sleeve tube</li>
+                    <li><span>Connector</span>: Lemo connector </li>
+                </ul>
 
-            <!-- "New Keyboards" Button -->
-            <a href="keyboards.html"><button class="gradient_button">Check out our New Keyboards</button></a>
+                <!-- Price -->
+                <p>$26.99</p>
+
+            </div>
+
+            <!-- Quantity Button -->
+            <div class="qty_button_elements">
+
+                <p>Quantity</p>
+
+                <div class="qty_button">
+                    <span class="minus">-</span>
+                    <span class="num">0</span>
+                    <span class="plus">+</span>
+                </div>
+            </div>
+            
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart" data-name="cartem" data-price="0.50">Add to Cart</button>
 
         </div>
         
-        <!-- Categories Section -->
-        <!-- Header text -->
-        <div class="header_text">
-            <h1>Components</h1>
-        </div>
+        <div class="product_recommendations">
+            
+            <h1>You may also like</h1>
 
-        <div id="image_sorting">
-
-            <div class="image_sorting_elements">
-                <a href="keyboards.html"><img src="images/categories_keyboard.jpg"></a>
-                <p>Keyboards</p>
-            </div>
-
-            <div class="image_sorting_elements">
-                <a href="switches.html"><img src="images/categories_switches.jpg"></a>
-                <p>Switches</p>
-            </div>
-
-            <div class="image_sorting_elements">
-                <a href="keycaps.html"><img src="images/categories_keycaps.jpg"></a>
-                <p>Keycaps</p>
-            </div>
-        </div>
-
-        <!-- Monthly Favourites Section -->
-
-        <!-- Header text -->
-        <div class="header_text">
-            <h1>Monthly Favourites</h1>
-        </div>
-
-        <div id="image_sorting">
-
-            <div class="image_sorting_elements">
-                <a href="keyboards.html"><img src="images/monthlyfav_keyboard.png"></a>
-                <p>GMK 78 Keyboard</p>
-            </div>
-
-            <div class="image_sorting_elements">
-                <a href="switches.html"><img src="images/monthlyfav_switches.png"></a>
-                <p>Akko Creamy Purple V3 Pro</p>
-            </div>
-
-            <div class="image_sorting_elements">
-                <a href="keycaps.html"><img src="images/monthlyfav_keycaps.png"></a>
-                <p>ABS Rome Keycap Set</p>
-            </div>
-        </div>
-
-        <!-- Keysthetic Experience Section -->
-        <div class="keysthetic_experience">
-
-            <!-- Header text -->
-            <h1>The Keysthetic Experience</h1>
-
-            <div class="image_sorting_exp">
-
-                <div class="image_sorting_elements_exp">
-                    <img src="images/experience_optimization.png">
-                    <h3> Countless <br>Options</h3>
-                    <p>Over 1,000 Combinations</p>
+            <!-- Product Images Section -->
+            <div class="products">
+                <div class="product_images">
+                    <a href="accessories_cart1.html"><img src="images/coiledcables.jpg"></a>
+                    <h3>Assorted Coiled Aviator Cables</h3><br><p><span>$26.99</span></p>
                 </div>
 
-                <div class="image_sorting_elements_exp">
-                    <img src="images/experience_beginnerfriendly.png">
-                    <h3>Beginner Friendly</h3>
-                    <p>Perfect entry into the hobby</p>
+                <div class="product_images">
+                    <a href="accessories_cart1.html"><img src="images/customcables.png"></a>
+                    <h3>Assorted Custom Aviator Cables</h3><br><p>Starting from <span>$32.00</span></p>
                 </div>
-
-                <div class="image_sorting_elements_exp">
-                    <img src="images/experience_affordable.png">
-                    <h3>Affordable & Accessible</h3>
-                    <p>Quality you trust<br>Prices you love</p>
-                </div>
-
+                
             </div>
+
         </div>
+
     </main>
+
 
     <!-- Footer -->
     <footer>
@@ -189,5 +152,10 @@
 
         </div>
     </footer>
+
+    <!-- JS Links -->
+    <script src="qty_button.js"></script>
+    <script src="cart.js"></script>
+
 </body>
 </html>
