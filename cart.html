@@ -6,33 +6,13 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Script to check if cart is Empty -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
-            const cartContainer = document.getElementById('cart-info');
-
-            if (cart.length === 0) {
-                cartContainer.textContent = 'Your cart is empty.';
-            } else {
-                cart.forEach(item => {
-                    const itemElement = document.createElement('div');
-                    itemElement.innerHTML = `
-                        <p>${item.name} - $${(item.price * item.quantity).toFixed(2)} (${item.quantity} pcs)</p>
-                    `;
-                    cartContainer.appendChild(itemElement);
-                });
-            }
-        });
-    </script>
-
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    
     <link rel="shortcut icon" href="images/landingpad_logo.png" type="image/x-icon">
-    <title> Keysthetic </title> 
-
+    <title>Your Cart</title> 
 </head>
 <body>
 
@@ -68,16 +48,34 @@
     </nav>
     <br>
     <hr>
-    
+
     <!-- Cart Section -->
     <main>
-        <div class="cart-info">
+
+        <div class="cart_section">
+
+            <!-- Header text -->
             <h1>Your Cart</h1>
+
+            <ul>
+                <span class="cart_elements"><li>PRODUCT</li></span>
+                <li>PRICE</li>
+                <span class="cart_elements"><li>QUANTITY</li></span>
+                <li>TOTAL</li>
+            </ul>
+
+            <hr>
+        </div>
+
+        <div id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div id="cart-total">
+            <!-- Total price will be displayed here -->
         </div>
     </main>
-
-
-
+    <button class="clear-cart" id="clear-cart"><span class="material-icons">delete</span> Clear Cart</button>
+    
     <!-- Footer -->
     <footer>
         <div class="footer_section">
@@ -114,5 +112,6 @@
         </div>
     </footer>
 
+    <script src="cart.js"></script>
 </body>
 </html>
