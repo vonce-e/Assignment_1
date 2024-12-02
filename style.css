@@ -764,4 +764,20 @@ transform: scaleX(1);
     position: relative;
     display: flex;
     align-items: center;
+    margin-left: 30%;
+}
+
+/* Trash Bin, Remove Button */
+.delete-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    margin-left: 60%; /* Change this to your liking, I didnt know where you wanted it */
+
+}
+.delete-item .material-icons {
+    color: red;
+    font-size: 24px;
 }
