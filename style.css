@@ -453,7 +453,7 @@ transform: scaleX(1);
     font-size: 35px;
     position: relative;
     left: 47.5%;
-    bottom: 675px;
+    bottom: 500px;
 
 }
 
@@ -463,7 +463,7 @@ transform: scaleX(1);
     opacity: 60%;
     position: relative;
     left: 47.5%;
-    bottom: 675px;
+    bottom: 500px;
 
 }
 
@@ -480,7 +480,7 @@ transform: scaleX(1);
     right: 2.1%;
     letter-spacing: 0.5px;
     opacity: 80%;
-    bottom: 675px;
+    bottom: 500px;
 }
 
 .product_description ul li span {
@@ -492,14 +492,14 @@ transform: scaleX(1);
 .product_description p {
     font-size: 20px;
     position: relative;
-    bottom: 675px;
+    bottom: 500px;
 }
 
 /* Quantity Button */
 .qty_button_elements {
     position: relative;
     left: 47.5%;
-    bottom: 675px;
+    bottom: 500px;
 }
 
 .qty_button_elements p {
@@ -535,7 +535,7 @@ transform: scaleX(1);
     font-weight: 500;
     position: relative;
     left: 47.5%;
-    bottom: 650px;
+    bottom: 450px;
     padding: 15px 300px;
     background-color: #3cd49c;
     border: none;
