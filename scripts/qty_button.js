@@ -1,3 +1,4 @@
+// Quantity Button Script
 document.addEventListener('DOMContentLoaded', () => {
     const qtyButtons = document.querySelectorAll('.qty_button');
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
