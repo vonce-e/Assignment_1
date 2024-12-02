@@ -440,7 +440,7 @@ transform: scaleX(1);
     transform: scale(1,0.9)
 }
 
-/* Cart Page Layout */
+/* Purchasing Page Layout */
 .product_info img {
     width: 35%;
     padding-left: 10%;
@@ -453,7 +453,7 @@ transform: scaleX(1);
     font-size: 35px;
     position: relative;
     left: 47.5%;
-    bottom: 19em;
+    bottom: 675px;
 
 }
 
@@ -463,7 +463,7 @@ transform: scaleX(1);
     opacity: 60%;
     position: relative;
     left: 47.5%;
-    bottom: 34em;
+    bottom: 675px;
 
 }
 
@@ -472,7 +472,6 @@ transform: scaleX(1);
     font-weight: 450;
     position: relative;
     left: 47.5%;
-    bottom: 42em;
 }
 
 .product_description ul li {
@@ -481,6 +480,7 @@ transform: scaleX(1);
     right: 2.1%;
     letter-spacing: 0.5px;
     opacity: 80%;
+    bottom: 675px;
 }
 
 .product_description ul li span {
@@ -492,14 +492,14 @@ transform: scaleX(1);
 .product_description p {
     font-size: 20px;
     position: relative;
-    top: 1.5em;
+    bottom: 675px;
 }
 
 /* Quantity Button */
 .qty_button_elements {
     position: relative;
-    left: 56.5em;
-    bottom: 39em;
+    left: 47.5%;
+    bottom: 675px;
 }
 
 .qty_button_elements p {
@@ -535,7 +535,7 @@ transform: scaleX(1);
     font-weight: 500;
     position: relative;
     left: 47.5%;
-    bottom: 37.5em;
+    bottom: 650px;
     padding: 15px 300px;
     background-color: #3cd49c;
     border: none;
